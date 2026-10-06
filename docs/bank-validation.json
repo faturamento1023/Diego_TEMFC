@@ -1,0 +1,107 @@
+{
+  "validated_at": "2026-10-06T19:48:12.198692+00:00",
+  "status": "passed",
+  "exams": [
+    {
+      "edition": 34,
+      "year": 2024,
+      "questions": 80,
+      "alternatives": 320,
+      "independently_verified_keys": 80,
+      "annulled": [
+        25
+      ],
+      "status": "passed"
+    },
+    {
+      "edition": 35,
+      "year": 2024,
+      "questions": 80,
+      "alternatives": 320,
+      "independently_verified_keys": 80,
+      "annulled": [
+        60
+      ],
+      "status": "passed"
+    },
+    {
+      "edition": 36,
+      "year": 2025,
+      "questions": 80,
+      "alternatives": 320,
+      "independently_verified_keys": 80,
+      "annulled": [],
+      "status": "passed"
+    },
+    {
+      "edition": 37,
+      "year": 2026,
+      "questions": 80,
+      "alternatives": 320,
+      "independently_verified_keys": 80,
+      "annulled": [],
+      "status": "passed"
+    }
+  ],
+  "total_questions": 320,
+  "total_alternatives": 1280,
+  "valid_scoring_questions": 318,
+  "total_figures": 7,
+  "total_topics": 32,
+  "topic_distribution": {
+    "Infectologia": 16,
+    "Gastroenterologia": 4,
+    "Urgências": 13,
+    "Saúde da criança e adolescente": 29,
+    "Saúde mental": 21,
+    "Diabetes": 9,
+    "APS e Medicina de Família": 47,
+    "Geriatria": 14,
+    "Musculoesquelético e reumatologia": 14,
+    "SUS e saúde coletiva": 17,
+    "Nefrologia": 2,
+    "Hematologia": 3,
+    "Dermatologia": 12,
+    "Saúde sexual e diversidade": 11,
+    "Saúde da mulher": 22,
+    "Prevenção e promoção da saúde": 16,
+    "Procedimentos na APS": 4,
+    "Oftalmologia": 4,
+    "Otorrinolaringologia": 4,
+    "Saúde bucal": 2,
+    "Hipertensão": 6,
+    "Cardiologia": 8,
+    "Cuidados paliativos e domiciliares": 7,
+    "Pneumologia": 5,
+    "Neurologia": 3,
+    "Angiologia": 4,
+    "Urologia": 6,
+    "Pré-natal e puerpério": 10,
+    "Endocrinologia e nutrição": 3,
+    "Saúde do trabalhador": 1,
+    "Epidemiologia e evidências": 2,
+    "Práticas integrativas": 1
+  },
+  "duplicate_ids": 0,
+  "missing_questions": 0,
+  "unmatched_keys": 0,
+  "empty_alternatives": 0,
+  "modified_content_checksums": 0,
+  "issues": [
+    {
+      "question_id": "temfc-34-q-025",
+      "kind": "annulled_with_letter_in_key",
+      "letter": "C"
+    },
+    {
+      "question_id": "temfc-35-q-060",
+      "kind": "annulled_with_letter_in_key",
+      "letter": "A"
+    },
+    {
+      "question_id": "temfc-35-q-060",
+      "kind": "ecg_missing_in_supplied_pdf"
+    }
+  ],
+  "live_supabase_validation": "pending_authorization_to_create_dedicated_project"
+}

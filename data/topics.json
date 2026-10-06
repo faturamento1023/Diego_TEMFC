@@ -1,0 +1,162 @@
+[
+  {
+    "id": "aps",
+    "name": "APS e Medicina de Família",
+    "question_count": 47
+  },
+  {
+    "id": "sus",
+    "name": "SUS e saúde coletiva",
+    "question_count": 17
+  },
+  {
+    "id": "crianca",
+    "name": "Saúde da criança e adolescente",
+    "question_count": 29
+  },
+  {
+    "id": "mulher",
+    "name": "Saúde da mulher",
+    "question_count": 22
+  },
+  {
+    "id": "prenatal",
+    "name": "Pré-natal e puerpério",
+    "question_count": 10
+  },
+  {
+    "id": "has",
+    "name": "Hipertensão",
+    "question_count": 6
+  },
+  {
+    "id": "diabetes",
+    "name": "Diabetes",
+    "question_count": 9
+  },
+  {
+    "id": "mental",
+    "name": "Saúde mental",
+    "question_count": 21
+  },
+  {
+    "id": "infecto",
+    "name": "Infectologia",
+    "question_count": 16
+  },
+  {
+    "id": "geriatria",
+    "name": "Geriatria",
+    "question_count": 14
+  },
+  {
+    "id": "prevencao",
+    "name": "Prevenção e promoção da saúde",
+    "question_count": 16
+  },
+  {
+    "id": "epidemio",
+    "name": "Epidemiologia e evidências",
+    "question_count": 2
+  },
+  {
+    "id": "urgencia",
+    "name": "Urgências",
+    "question_count": 13
+  },
+  {
+    "id": "cardio",
+    "name": "Cardiologia",
+    "question_count": 8
+  },
+  {
+    "id": "pneumo",
+    "name": "Pneumologia",
+    "question_count": 5
+  },
+  {
+    "id": "gastro",
+    "name": "Gastroenterologia",
+    "question_count": 4
+  },
+  {
+    "id": "nefro",
+    "name": "Nefrologia",
+    "question_count": 2
+  },
+  {
+    "id": "dermato",
+    "name": "Dermatologia",
+    "question_count": 12
+  },
+  {
+    "id": "osteo",
+    "name": "Musculoesquelético e reumatologia",
+    "question_count": 14
+  },
+  {
+    "id": "neuro",
+    "name": "Neurologia",
+    "question_count": 3
+  },
+  {
+    "id": "endocrino",
+    "name": "Endocrinologia e nutrição",
+    "question_count": 3
+  },
+  {
+    "id": "uro",
+    "name": "Urologia",
+    "question_count": 6
+  },
+  {
+    "id": "vascular",
+    "name": "Angiologia",
+    "question_count": 4
+  },
+  {
+    "id": "oftalmo",
+    "name": "Oftalmologia",
+    "question_count": 4
+  },
+  {
+    "id": "otorrino",
+    "name": "Otorrinolaringologia",
+    "question_count": 4
+  },
+  {
+    "id": "bucal",
+    "name": "Saúde bucal",
+    "question_count": 2
+  },
+  {
+    "id": "procedimentos",
+    "name": "Procedimentos na APS",
+    "question_count": 4
+  },
+  {
+    "id": "paliativos",
+    "name": "Cuidados paliativos e domiciliares",
+    "question_count": 7
+  },
+  {
+    "id": "sexualidade",
+    "name": "Saúde sexual e diversidade",
+    "question_count": 11
+  },
+  {
+    "id": "pics",
+    "name": "Práticas integrativas",
+    "question_count": 1
+  },
+  {
+    "id": "trabalho",
+    "name": "Saúde do trabalhador",
+    "question_count": 1
+  },
+  {
+    "id": "hemato",
+    "name": "Hematologia",
+    "question_count": 3
+  }
+]

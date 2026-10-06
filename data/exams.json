@@ -1,0 +1,74 @@
+[
+  {
+    "id": "temfc-34",
+    "edition": 34,
+    "year": 2024,
+    "title": "TEMFC 34 — 2024",
+    "question_count": 80,
+    "answer_key_count": 80,
+    "pdf_pages": 54,
+    "key_pages": [
+      54
+    ],
+    "source_drive_id": "1yff-tn1l4bTMh57ZLIqOhFJD_iQo2Po7",
+    "source_sha256": "70f5a28281771e8dcf505632ffc2b532f0f18a5c45ed51d81718711f380eb053",
+    "annulled_numbers": [
+      25
+    ]
+  },
+  {
+    "id": "temfc-35",
+    "edition": 35,
+    "year": 2024,
+    "title": "TEMFC 35 — 2024",
+    "question_count": 80,
+    "answer_key_count": 80,
+    "pdf_pages": 48,
+    "key_pages": [
+      48
+    ],
+    "source_drive_id": "1LKtfYSCbQyBBmxGDT4h1R7WyhKJABnQx",
+    "source_sha256": "ef583629e49a91729a5e1bdc7d187b05252418201b24fabeda426dd5a00d7e8b",
+    "annulled_numbers": [
+      60
+    ]
+  },
+  {
+    "id": "temfc-36",
+    "edition": 36,
+    "year": 2025,
+    "title": "TEMFC 36 — 2025",
+    "question_count": 80,
+    "answer_key_count": 80,
+    "pdf_pages": 89,
+    "key_pages": [
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88
+    ],
+    "source_drive_id": "1JHVRrliUtdwUD4XxgbomVcSAXAwMWSjH",
+    "source_sha256": "cd6cb6ef2640c0e24c09a9ae08c692c0d1c8bc6fdf3fde90aa9c9241898b1fab",
+    "annulled_numbers": []
+  },
+  {
+    "id": "temfc-37",
+    "edition": 37,
+    "year": 2026,
+    "title": "TEMFC 37 — 2026",
+    "question_count": 80,
+    "answer_key_count": 80,
+    "pdf_pages": 63,
+    "key_pages": [
+      61,
+      62,
+      63
+    ],
+    "source_drive_id": "1Paxm3M5kI25Yl4A5xAJvA7Z6ZwSg38C3",
+    "source_sha256": "31a245f554719047b8ed97b2bd51e77fe4bb96368b0dcde553decb16334520a3",
+    "annulled_numbers": []
+  }
+]
