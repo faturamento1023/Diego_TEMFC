@@ -4,10 +4,13 @@ Projeto de preparação inteligente para o Título de Especialista em Medicina d
 Família e Comunidade, com progresso individual no Supabase e acesso por celular
 e computador.
 
-**Estado atual: auditoria e banco de questões concluídos.** A criação do projeto
-Supabase dedicado depende da autorização expressamente solicitada pelo usuário.
-Nenhum projeto de outra finalidade foi alterado. Ainda não há aplicação
-publicada, autenticação configurada ou questões importadas no Supabase.
+**Estado atual: banco oficial importado e backend em operação.** Após a autorização
+expressa, o projeto dedicado `Diego_TEMFC` foi criado. Cinco migrations, Supabase
+Auth, RLS e funções de estudo estão aplicadas, e 320 questões foram importadas.
+A interface completa foi desenvolvida no ambiente de execução, mas seu envio
+final e a publicação foram interrompidos porque o ambiente ficou desconectado.
+**Ainda não há aplicação publicada.** O estado exato está em
+[docs/delivery-checkpoint.json](docs/delivery-checkpoint.json).
 
 ## Banco oficial auditado
 
@@ -76,15 +79,51 @@ Qualquer questão ausente, gabarito divergente, alternativa vazia ou alteração
 posterior do conteúdo faz a validação falhar. Os PDFs e os textos intermediários
 não são versionados; seus hashes e identificadores do Drive permitem rastreio.
 
-## Próxima etapa autorizável
+## Backend criado e validado
 
-Criar `Diego_TEMFC` na organização Supabase `mediflow_tec`. A consulta de custo
-em 06/10/2026 retornou **US$ 0 por mês** para a criação deste projeto, na
-organização atualmente no plano Free. A criação ainda não foi realizada.
+Projeto dedicado **Diego_TEMFC**, referência `ogdgoakussorayqbqayt`, região
+`sa-east-1`, organização `mediflow_tec`. O projeto de outra finalidade permaneceu
+intacto. As migrations foram efetivamente aplicadas pela conexão do Supabase;
+não é necessário executar SQL manualmente.
 
-Após a autorização: configurar Supabase Auth, aplicar e verificar migrations,
-RLS e funções, importar os registros auditados, implementar a aplicação e a
-PWA, verificar isolamento de usuários, salvamento, retomada, repetição espaçada
-e sincronização entre aparelhos, e publicar a aplicação. O Supabase será a
-fonte oficial de progresso desde a primeira versão funcional; credenciais
-privilegiadas não serão incluídas no frontend nem no repositório.
+O banco contém 13 tabelas públicas, uma tabela privada de gabaritos, duas views
+com `security_invoker`, índices, FKs, constraints e triggers. RLS protege todas
+as tabelas. O catálogo é somente leitura para estudantes, e os gabaritos só
+são liberados quando a correção é permitida. O frontend preparado usa somente
+URL e chave publishable pública, sem `service_role` ou senha de banco.
+
+As funções guardadas implementam seleção adaptativa/rápida, revisão de erros,
+favoritas, banco filtrado, originais completos e simulados mistos. Elas salvam
+respostas, marcações, posição, tempo, progresso individual, metas, desempenho
+e revisão espaçada; operações idempotentes evitam dupla contabilização, e a
+versão de sessão impede sobrescrita entre aparelhos.
+
+A validação remota confirmou 320 questões, 1.280 alternativas, 320 gabaritos,
+32 temas, zero gabaritos ausentes ou inválidos e zero questões sem quatro
+alternativas. Quatro testes de cálculos e 21 grupos de integração passaram.
+Uma execução completa anterior de UI/PWA aprovou oito grupos, incluindo
+responsividade em cinco larguras, dois processos de navegador, sincronização
+offline e simulados. A última execução de UI, após ajustes finais, foi
+interrompida pelo ambiente offline. As duas contas de teste foram removidas;
+o banco está sem histórico fictício ou contas de estudantes pré-criadas.
+
+[Validação remota](docs/supabase-validation.json) ·
+[Estrutura e regras](docs/banco-de-dados.md) ·
+[Estado da entrega](docs/delivery-checkpoint.json).
+
+## Publicação pendente
+
+A interface/PWA já existe no ambiente de execução, com estudo adaptativo,
+modo rápido, revisão, simulados, resultados, retomada, desempenho, favoritas,
+filtros, manifest, service worker e fila temporária de sincronização.
+Seus arquivos finais ainda não estão na branch `main`. Os hashes e caminhos
+pendentes estão registrados no checkpoint para retomar sem criar outro projeto.
+Não existe URL de produção confirmada; o projeto Sites existente permanece
+privado e sem publicação validada.
+
+Não foram realizados testes em um Android físico ou entrega de e-mail para
+um endereço real de Diego. SMTP/templates/redirecionamentos do Auth não são
+administráveis pela conexão disponível. A interface local inclui validação
+do link recebido dentro do aplicativo, cujo teste final foi interrompido.
+O advisor aponta proteção contra senhas vazadas desabilitada por padrão:
+[referência de configuração](https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection).

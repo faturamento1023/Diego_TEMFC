@@ -1,0 +1,251 @@
+{
+  "exams": [
+    {
+      "id": "temfc-34",
+      "year": 2024,
+      "edition": 34,
+      "annulled_count": 1,
+      "question_count": 80
+    },
+    {
+      "id": "temfc-35",
+      "year": 2024,
+      "edition": 35,
+      "annulled_count": 1,
+      "question_count": 80
+    },
+    {
+      "id": "temfc-36",
+      "year": 2025,
+      "edition": 36,
+      "annulled_count": 0,
+      "question_count": 80
+    },
+    {
+      "id": "temfc-37",
+      "year": 2026,
+      "edition": 37,
+      "annulled_count": 0,
+      "question_count": 80
+    }
+  ],
+  "views": [
+    {
+      "name": "topic_performance",
+      "options": [
+        "security_invoker=true"
+      ]
+    },
+    {
+      "name": "exam_performance",
+      "options": [
+        "security_invoker=true"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "rls": true,
+      "name": "answer_keys",
+      "schema": "private"
+    },
+    {
+      "rls": true,
+      "name": "exams",
+      "schema": "public"
+    },
+    {
+      "rls": true,
+      "name": "topics",
+      "schema": "public"
+    },
+    {
+      "rls": true,
+      "name": "questions",
+      "schema": "public"
+    },
+    {
+      "rls": true,
+      "name": "question_options",
+      "schema": "public"
+    },
+    {
+      "rls": true,
+      "name": "study_sessions",
+      "schema": "public"
+    },
+    {
+      "rls": true,
+      "name": "session_questions",
+      "schema": "public"
+    },
+    {
+      "rls": true,
+      "name": "user_answers",
+      "schema": "public"
+    },
+    {
+      "rls": true,
+      "name": "question_progress",
+      "schema": "public"
+    },
+    {
+      "rls": true,
+      "name": "review_queue",
+      "schema": "public"
+    },
+    {
+      "rls": true,
+      "name": "favorites",
+      "schema": "public"
+    },
+    {
+      "rls": true,
+      "name": "daily_progress",
+      "schema": "public"
+    },
+    {
+      "rls": true,
+      "name": "sync_operations",
+      "schema": "public"
+    },
+    {
+      "rls": true,
+      "name": "profiles",
+      "schema": "public"
+    }
+  ],
+  "topics": 32,
+  "scorable": 318,
+  "questions": 320,
+  "checked_at": "2026-10-06T21:38:09.276584+00:00",
+  "project_id": "ogdgoakussorayqbqayt",
+  "answer_keys": 320,
+  "alternatives": 1280,
+  "invalid_keys": 0,
+  "missing_keys": 0,
+  "profiles_remaining": 0,
+  "qa_users_remaining": 0,
+  "user_answers_remaining": 0,
+  "official_key_fingerprint": "2527150f38e886544f2db6db2a1d36e2",
+  "study_sessions_remaining": 0,
+  "invalid_alternative_counts": 0,
+  "migrations": [
+    {
+      "version": "20261006200123",
+      "name": "temfc_core"
+    },
+    {
+      "version": "20261006202246",
+      "name": "temfc_integrity_indexes"
+    },
+    {
+      "version": "20261006203428",
+      "name": "temfc_session_reliability"
+    },
+    {
+      "version": "20261006210953",
+      "name": "temfc_favorites_coverage"
+    },
+    {
+      "version": "20261006212152",
+      "name": "temfc_mastery_consistency"
+    }
+  ],
+  "fingerprint_definition": "md5(string_agg(question_id || ':' || official_answer, ',' order by question_id))",
+  "security_advisors": [
+    {
+      "name": "auth_leaked_password_protection",
+      "title": "Leaked Password Protection Disabled",
+      "level": "WARN",
+      "facing": "EXTERNAL",
+      "categories": [
+        "SECURITY"
+      ],
+      "description": "Leaked password protection is currently disabled.",
+      "remediation": "https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection",
+      "count": 1,
+      "findings": [
+        {
+          "detail": "Supabase Auth prevents the use of compromised passwords by checking against HaveIBeenPwned.org. Enable this feature to enhance security.",
+          "metadata": {
+            "type": "auth",
+            "entity": "Auth"
+          }
+        }
+      ]
+    }
+  ],
+  "performance_advisors": [
+    {
+      "name": "unused_index",
+      "title": "Unused Index",
+      "level": "INFO",
+      "facing": "EXTERNAL",
+      "categories": [
+        "PERFORMANCE"
+      ],
+      "description": "Detects if an index has never been used and may be a candidate for removal.",
+      "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0005_unused_index",
+      "count": 6,
+      "findings": [
+        {
+          "detail": "Index \\`questions_topic_idx\\` on table \\`public.questions\\` has not been used",
+          "metadata": {
+            "name": "questions",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T21:23:10.745Z"
+        },
+        {
+          "detail": "Index \\`answers_question_idx\\` on table \\`public.user_answers\\` has not been used",
+          "metadata": {
+            "name": "user_answers",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T21:23:10.745Z"
+        },
+        {
+          "detail": "Index \\`progress_question_idx\\` on table \\`public.question_progress\\` has not been used",
+          "metadata": {
+            "name": "question_progress",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T21:23:10.745Z"
+        },
+        {
+          "detail": "Index \\`review_question_idx\\` on table \\`public.review_queue\\` has not been used",
+          "metadata": {
+            "name": "review_queue",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T21:23:10.745Z"
+        },
+        {
+          "detail": "Index \\`favorites_question_idx\\` on table \\`public.favorites\\` has not been used",
+          "metadata": {
+            "name": "favorites",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T21:23:10.745Z"
+        },
+        {
+          "detail": "Index \\`answer_option_idx\\` on table \\`public.user_answers\\` has not been used",
+          "metadata": {
+            "name": "user_answers",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T21:23:10.745Z"
+        }
+      ]
+    }
+  ],
+  "disposable_test_accounts_deleted": true,
+  "source_catalog_verified_by_live_integration": true
+}

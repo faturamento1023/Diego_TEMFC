@@ -53,7 +53,20 @@ outra finalidade. Esse projeto não foi modificado. A única organização
 disponível é **mediflow_tec**, no plano Free. A consulta de custo para um novo
 projeto nessa organização retornou `amount: 0`, `recurrence: monthly`.
 
-Conforme a instrução explícita do usuário, a criação de **Diego_TEMFC** aguarda
-autorização. Consequentemente, ainda não foram executadas migrations, criados
-usuários de teste nem importadas questões em um banco remoto. Testes de Auth,
-RLS, retomada e sincronização entre dispositivos dependem dessa etapa.
+Após a autorização explícita “sim pode criar no Diego_TEMFC”, o projeto
+foi criado em `sa-east-1`, referência `ogdgoakussorayqbqayt`. Cinco migrations
+foram aplicadas e as 320 questões, 1.280 alternativas e 320 gabaritos foram
+importados e comparados com a fonte auditada. Quatro testes de cálculos e 21
+grupos de integração passaram. Uma execução completa de UI/PWA aprovou oito
+grupos; a última execução, após ajustes finais de histórico e página inicial,
+foi interrompida porque o ambiente de execução ficou desconectado.
+
+As duas contas descartáveis foram removidas por UUID e marcador de QA; seus
+históricos foram apagados em cascata. A conferência remota posterior manteve
+320 questões e confirmou zero usuários de QA, perfis e sessões. Não foi criado
+um usuário real de Diego sem seu e-mail.
+
+O código completo da interface ainda está no ambiente de execução, pendente
+de envio final ao GitHub e publicação. Não há URL de produção confirmada.
+O checkpoint e a validação remota estão em `delivery-checkpoint.json` e
+`supabase-validation.json`.

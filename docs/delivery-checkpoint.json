@@ -1,0 +1,349 @@
+{
+  "recorded_at": "2026-10-06T21:39:50.010Z",
+  "status": "blocked_environment_offline",
+  "project_id": "ogdgoakussorayqbqayt",
+  "github_branch": "main",
+  "site_project_id": "appgprj_6ac559cd135881919c55697c2e103976",
+  "production_url": null,
+  "completed": {
+    "official_questions": 320,
+    "official_alternatives": 1280,
+    "official_answer_keys": 320,
+    "scorable_questions": 318,
+    "topics": 32,
+    "applied_migrations": 5,
+    "rls_tables": 14,
+    "unit_tests_passed": 4,
+    "live_integration_groups_passed": 21,
+    "previous_full_ui_groups_passed": 8,
+    "test_accounts_cleaned": true
+  },
+  "pending": [
+    "Upload complete frontend/PWA source and latest UI test reports to GitHub",
+    "Complete final UI run including recovery link",
+    "Push exact source to the existing Sites source repository",
+    "Package and publish the existing private Site; confirm successful deployment status"
+  ],
+  "last_error": "409 Conflict, environment_offline: Environment is not connected.",
+  "local_project_path": "/workspace/scratch/66aead5d849e/Diego_TEMFC",
+  "local_uncommitted_files": [
+    {
+      "path": ".openai/hosting.json",
+      "characters": 106,
+      "binary": false,
+      "sha": "6342154ee0823155d9a084b7bc62e9810e246278",
+      "existing": false
+    },
+    {
+      "path": "README.md",
+      "characters": 7820,
+      "binary": false,
+      "sha": "225d5c671c4cf64e6dd10734460ed81587d03e0b",
+      "existing": false
+    },
+    {
+      "path": "docs/auditoria.md",
+      "characters": 3852,
+      "binary": false,
+      "sha": "5fad1bf5a76139b2b6da93fa24cf2122ea03e369",
+      "existing": false
+    },
+    {
+      "path": "docs/banco-de-dados.md",
+      "characters": 4821,
+      "binary": false,
+      "sha": "6ddd4c8b211889c9edf80621abd5c93b394a33f4",
+      "existing": false
+    },
+    {
+      "path": "docs/bank-validation.json",
+      "characters": 2576,
+      "binary": false,
+      "sha": "2fa6553cad67cdf5da55bef3b0936946751ae95f",
+      "existing": false
+    },
+    {
+      "path": "docs/integration-validation.json",
+      "characters": 2835,
+      "binary": false,
+      "sha": "052093427d0e34cbc588414ee3ad53daba127a67",
+      "existing": false
+    },
+    {
+      "path": "docs/ui-validation.json",
+      "characters": 1435,
+      "binary": false,
+      "sha": "255cb6865a9c63ef74ef077f465ec31d59e38588",
+      "existing": false
+    },
+    {
+      "path": "index.html",
+      "characters": 1024,
+      "binary": false,
+      "sha": "5287b5bfc0b800a8e33356a181284a323258d711",
+      "existing": false
+    },
+    {
+      "path": "package-lock.json",
+      "characters": 31546,
+      "binary": false,
+      "sha": "2e3e1d5cb8597a71b28c2ebc1e5507262eb14e6e",
+      "existing": false
+    },
+    {
+      "path": "package.json",
+      "characters": 840,
+      "binary": false,
+      "sha": "93870019542e1a62ef25d5fe3a9bc5ac2ea23289",
+      "existing": false
+    },
+    {
+      "path": "public/fonts/fonts.css",
+      "characters": 78,
+      "binary": false,
+      "sha": "48e238929bc942e47a22702dfbbf849607f40ba9",
+      "existing": false
+    },
+    {
+      "path": "public/icons/icon-192.png",
+      "characters": null,
+      "binary": true,
+      "sha": "8dc7dd5a892e841c32792ba29ec9cb31de953acf",
+      "existing": false
+    },
+    {
+      "path": "public/icons/icon-512.png",
+      "characters": null,
+      "binary": true,
+      "sha": "5ded5fc1b60e37e11e22d94d0cb1fb03922541ea",
+      "existing": false
+    },
+    {
+      "path": "public/icons/icon.svg",
+      "characters": 259,
+      "binary": false,
+      "sha": "fef0a17101765c6e07897573fff9ac260072a8a8",
+      "existing": false
+    },
+    {
+      "path": "public/icons/maskable-512.png",
+      "characters": null,
+      "binary": true,
+      "sha": "8e578556ddc0fbca78bf779d8962bf0d68574f73",
+      "existing": false
+    },
+    {
+      "path": "public/manifest.webmanifest",
+      "characters": 772,
+      "binary": false,
+      "sha": "6131ed9c90d3726f980dac7240ad427d562859ef",
+      "existing": false
+    },
+    {
+      "path": "public/media/temfc-34-q-020-1.png",
+      "characters": null,
+      "binary": true,
+      "sha": "69370f0cc9303ab373924f78f6f104fcaad59aa0",
+      "existing": true
+    },
+    {
+      "path": "public/media/temfc-34-q-034-1.png",
+      "characters": null,
+      "binary": true,
+      "sha": "b3aa4f6092a74025af910a6a44076dfc5768317e",
+      "existing": true
+    },
+    {
+      "path": "public/media/temfc-34-q-034-2.png",
+      "characters": null,
+      "binary": true,
+      "sha": "375f2b77f733ec8407b9b65bffe74a3ed2ca0141",
+      "existing": true
+    },
+    {
+      "path": "public/media/temfc-34-q-071-1.png",
+      "characters": null,
+      "binary": true,
+      "sha": "20083ff9c98065bd8b166db6fa09984569bfadd3",
+      "existing": true
+    },
+    {
+      "path": "public/media/temfc-34-q-075-1.png",
+      "characters": null,
+      "binary": true,
+      "sha": "50a03600ad689bed2006a0b29eea0603080810b9",
+      "existing": true
+    },
+    {
+      "path": "public/media/temfc-36-q-050-1.png",
+      "characters": null,
+      "binary": true,
+      "sha": "1b8e44831108c6ba4231b353dae3753b59a0ad83",
+      "existing": true
+    },
+    {
+      "path": "public/media/temfc-37-q-062-1.png",
+      "characters": null,
+      "binary": true,
+      "sha": "b3c89bd8081f2af7d98b408a8961c99f2b67b589",
+      "existing": true
+    },
+    {
+      "path": "public/sw.js",
+      "characters": 1661,
+      "binary": false,
+      "sha": "6f67a2d3ccb39f1ed50ae92aa90a62bc333511dc",
+      "existing": false
+    },
+    {
+      "path": "scripts/build_pwa.mjs",
+      "characters": 1099,
+      "binary": false,
+      "sha": "71aa933ca3be17087fd5050830b2eb1974011159",
+      "existing": false
+    },
+    {
+      "path": "scripts/validate_bank.py",
+      "characters": 5811,
+      "binary": false,
+      "sha": "fb82407cbfc9b842a1928096b59fbcd69410a27a",
+      "existing": false
+    },
+    {
+      "path": "scripts/validate_build.mjs",
+      "characters": 1492,
+      "binary": false,
+      "sha": "c71b88c70adfe04be078bf255232c0f284b285d7",
+      "existing": false
+    },
+    {
+      "path": "src/app.js",
+      "characters": 73980,
+      "binary": false,
+      "sha": "5a1992e45a07dd79113ea20b7a79abd1c8510dc2",
+      "existing": false
+    },
+    {
+      "path": "src/backend.js",
+      "characters": 1892,
+      "binary": false,
+      "sha": "343a9799ef1b57467fb0af517854d7930977410c",
+      "existing": false
+    },
+    {
+      "path": "src/config.js",
+      "characters": 248,
+      "binary": false,
+      "sha": "d24ac21b45c467106625389a585f073b3ea14655",
+      "existing": false
+    },
+    {
+      "path": "src/domain.js",
+      "characters": 2172,
+      "binary": false,
+      "sha": "049115a9fea74909af3c515d5d73e302fc68b665",
+      "existing": false
+    },
+    {
+      "path": "src/outbox.js",
+      "characters": 3865,
+      "binary": false,
+      "sha": "1537cb7215eb72db62a31e8ef77c2d84c2608e9f",
+      "existing": false
+    },
+    {
+      "path": "src/readability.css",
+      "characters": 9385,
+      "binary": false,
+      "sha": "43a8f391e05258a8644cdc56aa8d5877dddc8023",
+      "existing": false
+    },
+    {
+      "path": "src/styles.css",
+      "characters": 60392,
+      "binary": false,
+      "sha": "7dbbb193c9d859442e9dc92f7f4004f111815a8a",
+      "existing": false
+    },
+    {
+      "path": "supabase/migrations/20261006200123_temfc_core.sql",
+      "characters": 37128,
+      "binary": false,
+      "sha": "bcb965630a42d0931250ee08a319733dc5d1044a",
+      "existing": false
+    },
+    {
+      "path": "supabase/migrations/20261006202246_temfc_integrity_indexes.sql",
+      "characters": 691,
+      "binary": false,
+      "sha": "6d04fdbcf40ebc464679c4a85df61f208fe06720",
+      "existing": false
+    },
+    {
+      "path": "supabase/migrations/20261006203428_temfc_session_reliability.sql",
+      "characters": 14282,
+      "binary": false,
+      "sha": "fcbcff4ab92b241c2370d856cd25b2cbfd9ed63e",
+      "existing": false
+    },
+    {
+      "path": "supabase/migrations/20261006210953_temfc_favorites_coverage.sql",
+      "characters": 6195,
+      "binary": false,
+      "sha": "b6a068c947c44883cad4a1c5309394feb58cdb73",
+      "existing": false
+    },
+    {
+      "path": "supabase/migrations/20261006212152_temfc_mastery_consistency.sql",
+      "characters": 3873,
+      "binary": false,
+      "sha": "50f2619d43f27e9d93eba71caa44d12ba1ef6bed",
+      "existing": false
+    },
+    {
+      "path": "tests/domain.test.js",
+      "characters": 1774,
+      "binary": false,
+      "sha": "72b1af161ffab1f14afae48dedaa98dff89ed33a",
+      "existing": false
+    },
+    {
+      "path": "tests/e2e.mjs",
+      "characters": 15796,
+      "binary": false,
+      "sha": "c234f7a9975153fb449d8fd4d71d26a813e15394",
+      "existing": false
+    },
+    {
+      "path": "tests/extended-integration.mjs",
+      "characters": 6079,
+      "binary": false,
+      "sha": "c9f3e17d026fc81ac2ecc55daf81124799e1f907",
+      "existing": false
+    },
+    {
+      "path": "tests/integration.mjs",
+      "characters": 14602,
+      "binary": false,
+      "sha": "373089fb8940a6963237a1aa41b3fed01e69a689",
+      "existing": false
+    },
+    {
+      "path": "vite.config.js",
+      "characters": 234,
+      "binary": false,
+      "sha": "d983bfe70232371d041e81ba362b74b3ee262fea",
+      "existing": false
+    }
+  ],
+  "local_migration_renames": [
+    "supabase/migrations/20261006195834_temfc_core.sql",
+    "supabase/migrations/20261006202141_temfc_integrity_indexes.sql"
+  ],
+  "notes": [
+    "The latest complete UI run passed before final history/home refinements. The last rerun was interrupted by loss of the execution environment.",
+    "Do not create a new Supabase or Sites project on resumption. The user already authorized Diego_TEMFC creation.",
+    "The original bank/backend are committed; the complete frontend is still only in the execution workspace.",
+    "No production URL is confirmed. QA fixtures were deleted; recreate disposable fixtures before further integration tests."
+  ]
+}
