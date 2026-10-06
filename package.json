@@ -1,0 +1,15 @@
+{
+  "name": "diego-temfc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 4173",
+    "build": "vite build && node scripts/build_pwa.mjs",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "test": "node --test tests/*.test.js",
+    "validate:bank": "python scripts/validate_bank.py"
+  },
+  "dependencies": { "@supabase/supabase-js": "2.117.2" },
+  "devDependencies": { "vite": "8.3.3" }
+}
